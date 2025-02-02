@@ -1,0 +1,21 @@
+{
+    "device_id": "pico",
+    "location": "office",
+    "mqtt": {
+        "broker": {
+            "host": "1.2.3.4",
+            "port": 1883,
+            "keepalive": 60
+        }
+    },
+    "network": {
+        "wifi": {
+            "ssid": "mywifi",
+            "password": "mypassword",
+            "country": "US"
+        }
+    },
+    "logging": {
+        "level": "info"
+    }
+}
