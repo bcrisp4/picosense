@@ -1,0 +1,25 @@
+{
+    "settings": {
+        "python.languageServer": "Pylance",
+        "cSpell.words": [
+            "mqtt",
+            "pico",
+            "picosense"
+        ],
+        "micropico.pyIgnore": [
+            "**/.picowgo",
+            "**/.micropico",
+            "**/.vscode",
+            "**/.gitignore",
+            "**/.git",
+            "**/.DS_Store",
+            "**/project.pico-go",
+            "**/env",
+            "**/venv",
+            "**/.venv",
+            "**/.idea",
+            ".mpremote_venv",
+            "examples"
+        ]
+    }
+}
