@@ -23,12 +23,6 @@ def setup_logging(
     console_handler.setFormatter(logging.Formatter(format))
     root_logger.addHandler(console_handler)
 
-    # Setup logging to file
-    file_handler = logging.FileHandler(filename, mode="a")
-    file_handler.setLevel(level)
-    file_handler.setFormatter(logging.Formatter(format))
-    root_logger.addHandler(file_handler)
-
     # Setup logging to MQTT
     if mqtt_provider:
         mqtt_handler = MQTTHandler(provider=mqtt_provider, topic=mqtt_topic)
@@ -40,7 +34,6 @@ def setup_logging(
 
 
 class JSONFormatter(logging.Formatter):
-
     def format(self, record: logging.LogRecord) -> str:
         log_record = {
             "timestamp": self.formatTime(self.datefmt, record),
