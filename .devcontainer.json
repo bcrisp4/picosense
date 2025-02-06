@@ -1,0 +1,23 @@
+{
+    "name": "Micropython Unix Dev Container",
+    "image": "micropython-unix:v1.24.1",
+    "remoteUser": "root",
+    "workspaceFolder": "/workspace",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+            },
+            "extensions": [
+                "ms-python.python"
+            ]
+        },
+        "settings": {
+            "remote.containers.copyGitConfig": true
+        }
+    },
+    "postCreateCommand": "apt-get update && apt-get install -y git"
+}
