@@ -19,5 +19,5 @@
             "remote.containers.copyGitConfig": true
         }
     },
-    "postCreateCommand": "apt-get update && apt-get install -y git"
+    "postCreateCommand": "apt-get update && apt-get install -y git vim bash-completion"
 }
