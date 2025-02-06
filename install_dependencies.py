@@ -40,13 +40,13 @@ dependencies = [
     {
         "name": "bh1750",
         "authors": ["flrrth"],
-        "homepage": "https://github.com/flrrth/pico-bh1750/tree/04493a20ccef2babe4cb457dd2f1e2fdecc50433",
+        "homepage": "https://github.com/flrrth/pico-bh1750",
         "url": "https://raw.githubusercontent.com/flrrth/pico-bh1750/04493a20ccef2babe4cb457dd2f1e2fdecc50433/bh1750/bh1750.py",
     },
     {
         "name": "bme688",
         "authors": ["Limor Fried", "CRCibernetica"],
-        "homepage": "https://github.com/CRCibernetica/bme688-i2c-micropython/tree/07a7b9fb775ef4466fe3e65e03f95dfd740be676",
+        "homepage": "https://github.com/CRCibernetica/bme688-i2c-micropython",
         "url": "https://raw.githubusercontent.com/CRCibernetica/bme688-i2c-micropython/07a7b9fb775ef4466fe3e65e03f95dfd740be676/bme688.py",
     },
     {
